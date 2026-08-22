@@ -27,6 +27,19 @@ class QuestionResponse(BaseModel):
     answer: Answer
 
 
+@app.get("/")
+def root() -> dict:
+    return {
+        "name": "cloud-gpt physics API",
+        "description": "Answers physics questions using Wikipedia (Wikimedia) as its source.",
+        "endpoints": {
+            "POST /ask": "body: {\"question\": \"...\"} -> answer sourced from Wikipedia",
+            "GET /health": "liveness check",
+            "GET /docs": "interactive API documentation",
+        },
+    }
+
+
 @app.get("/health")
 def health() -> dict:
     return {"status": "ok"}

@@ -11,6 +11,13 @@ SAMPLE_ANSWER = {
 }
 
 
+def test_root_describes_the_api():
+    response = client.get("/")
+
+    assert response.status_code == 200
+    assert response.json()["name"] == "cloud-gpt physics API"
+
+
 def test_health():
     response = client.get("/health")
 
