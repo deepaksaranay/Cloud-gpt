@@ -1,0 +1,8 @@
+order_id,customer_name,email,product,quantity,unit_price,order_date
+1001,Alice Nguyen,alice@example.com,Widget,3,9.99,2024-01-15
+1002,Bob Carter,bob@example.com,Gadget,1,49.5,2024-01-16
+1003,,carol@example.com,Widget,2,9.99,2024-01-17
+1004,Dave Kim,not-an-email,Gizmo,5,12.0,2024-01-18
+1005,Erin Shah,erin@example.com,Gadget,-1,49.5,2024-01-19
+1006,Farah Ali,farah@example.com,Widget,4,9.99,2024-02-01
+1001,Alice Nguyen,alice@example.com,Widget,3,9.99,2024-01-15

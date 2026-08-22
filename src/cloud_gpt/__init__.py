@@ -1,2 +1,1 @@
-def add(a: int, b: int) -> int:
-    return a + b
+__version__ = "0.1.0"
